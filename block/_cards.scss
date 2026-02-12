@@ -1,0 +1,59 @@
+.cards {
+  width: 100%;
+  margin: 100px 0;
+
+  .cards__container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 77px;
+    /* identical to box height, or 214% */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #364c76;
+  }
+
+  .cards__cards {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cards__card {
+    border: 1px solid red;
+  }
+
+  .cards__card-title {
+    width: 310px;
+    height: 17px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+    /* identical to box height, or 185% */
+    text-align: center;
+
+    color: #00c5de;
+  }
+
+  .cards__card-text {
+    width: 380px;
+    height: 96px;
+    margin: 70px auto;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+
+    color: #414141;
+  }
+}

@@ -1,0 +1,107 @@
+.navbar {
+  width: 1250px;
+  position: sticky;
+  top: 1px;
+  background: #00000033;
+  padding: 10px 0;
+  z-index: 100;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto;
+
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__logo {
+    /* IMAGE */
+    width: 163px;
+    height: 48px;
+  }
+
+  .navbar__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navbar__link {
+    color: #003b66;
+    text-decoration: none;
+    font-weight: 700px;
+  }
+
+  .navbar__item span {
+    color: black;
+    font-weight: 600;
+  }
+
+  .navbar__link {
+    color: grey;
+    transition: all 0.7s ease;
+  }
+
+  .navbar__link:hover {
+    color: white;
+    transition: all 0.7s ease;
+  }
+
+  .navbar__burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .navbar__burger div {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .navbar__btn {
+    /* Rectangle */
+
+    box-sizing: border-box;
+
+    width: 240px;
+    height: 44px;
+    border: 1px solid #00c5de;
+    border-radius: 61px;
+    color: #00c5de;
+    font-family: "Montserrat";
+    transition: all 1s ease;
+  }
+
+  .navbar__btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .navbar__btn:active {
+    background: black;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    width: 90%;
+    margin: auto;
+
+    .navbar__list {
+      display: none;
+    }
+
+    .navbar__burger {
+      display: flex;
+    }
+
+    .navbar__btn {
+      display: none;
+    }
+  }
+}

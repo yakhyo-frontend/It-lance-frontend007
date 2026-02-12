@@ -1,0 +1,149 @@
+.intro {
+  width: 100%;
+  margin-top: 80px;
+
+  .intro__container {
+    @include flex;
+    flex-direction: column;
+  }
+
+  .intro__title {
+    width: 923px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 77px;
+    /* or 120% */
+    text-align: center;
+
+    color: #00c5de;
+  }
+
+  .intro__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 77px;
+    /* or 321% */
+    text-align: center;
+
+    color: #6a6a6a;
+  }
+
+  .intro__btn {
+    /* button */
+
+    width: 238px;
+    height: 50px;
+    background: #00c5de;
+    border-radius: 61px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    transition: all 1s ease;
+  }
+
+  .intro__btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .intro__btn:active {
+    transition: all 0.4s ease;
+    background: black;
+  }
+
+  .intro__content {
+    @include flex;
+  }
+
+  .intro__img {
+    width: 480px;
+    height: 325px;
+  }
+
+  .intro__img {
+    position: relative;
+    left: -60px;
+    z-index: 100;
+  }
+
+  .intro__img-2 {
+    position: relative;
+    left: -360px;
+  }
+
+  .intro__img-3 {
+    position: relative;
+    right: 300px;
+  }
+
+  .intro__img-4 {
+    position: relative;
+    right: 290px;
+  }
+
+  .intro__img-5 {
+    position: relative;
+    right: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    border: 1px solid red;
+
+    .intro__container {
+      flex-direction: column;
+    }
+
+    .intro__content {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      gap: 30px;
+    }
+
+    .intro__title {
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .intro__text {
+      width: 90%;
+      text-align: center;
+      margin: 20px auto;
+      line-height: 1.2;
+      font-size: 18px;
+    }
+
+    .intro__btn {
+      display: block;
+      margin: auto;
+      margin: 20px auto;
+    }
+    .intro__img {
+      position: static;
+      z-index: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
