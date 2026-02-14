@@ -1,0 +1,80 @@
+.quality {
+  width: 100%;
+  margin-top: 60px;
+
+  .quality-container {
+    @include flex;
+    flex-direction: column;
+  }
+
+  .quality-title {
+    font-size: 36px;
+    line-height: 77px;
+    /* identical to box height, or 214% */
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #364c76;
+  }
+
+  .quality-btn {
+    width: 238px;
+    height: 50px;
+    background: #00c5de;
+    border-radius: 61px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    transition: all 1s ease;
+    margin: 20px;
+  }
+
+  .quality-btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .quality-btn:active {
+    background-color: black;
+    transition: all 0.4s ease;
+  }
+}
+@media (max-width: 1200px) {
+  .quality {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .quality-title {
+      margin: 20px auto;
+
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .quality-img {
+      margin: auto;
+      width: 400px;
+      height: auto;
+    }
+
+    .quality-line {
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    .quality-btn {
+      margin: 20px auto;
+    }
+  }
+}

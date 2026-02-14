@@ -1,0 +1,171 @@
+.elons {
+  padding: 80px 40px;
+  background-image: url("assets/backgrounds/-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+.elons-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.elons-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color_1;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.elons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.elon-card {
+  background-color: $background-color_4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+}
+.elon-video {
+  height: 315px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  position: relative;
+}
+.video-progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.video-time {
+  font-size: 16px;
+  font-weight: 350;
+  color: $color_5;
+  opacity: 0.7;
+}
+.video-line {
+  flex: 1;
+  height: 3px;
+  background-color: $background-color_2;
+  border-radius: 4px;
+}
+.elon-author {
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.author-info {
+  flex: 1;
+}
+.author-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: $color_1;
+  margin-bottom: 4px;
+}
+.author-role {
+  font-size: 16px;
+  font-weight: 350;
+  color: $color_1;
+}
+.author-meta {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 350;
+  color: $color_1;
+  line-height: 1.4;
+}
+.elon-text {
+  padding: 0 24px 24px;
+}
+.elon-quote {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  color: $color_1;
+  margin-bottom: 12px;
+}
+.elon-list {
+  list-style: none;
+  li {
+    font-size: 16px;
+    font-weight: 350;
+    color: $color_1;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: $color_3;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .elons {
+    padding: 50px 16px;
+  }
+
+  .elons-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .elons-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .elon-video {
+    height: 220px;
+    padding: 12px;
+  }
+
+  .video-time {
+    font-size: 14px;
+  }
+
+  .author-meta {
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .elon-author {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .author-name {
+    font-size: 18px;
+  }
+
+  .author-role,
+  .author-meta {
+    font-size: 14px;
+  }
+
+  .elon-quote {
+    font-size: 16px;
+  }
+
+  .elon-list li {
+    font-size: 14px;
+  }
+}

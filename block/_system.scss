@@ -1,0 +1,146 @@
+.system {
+  width: 100%;
+  margin-top: 60px;
+  background: whitesmoke;
+
+  .system-container {
+    @include flex;
+    flex-direction: column;
+  }
+
+  .system-title {
+    margin: 30px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 77px;
+    /* identical to box height, or 214% */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #364c76;
+  }
+  .system-box {
+    width: 1000px;
+    height: 480px;
+    background: white;
+    border-radius: 20px;
+    margin: 30px 0;
+  }
+
+  .system-box-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+    color: #364c76;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #2b2b2b;
+    margin: 0 30px;
+    opacity: 0.87;
+  }
+
+  input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 30px;
+    color: #bcbcbc;
+    border: none;
+    opacity: 0.87;
+    border-bottom: 1px solid;
+    outline: none;
+  }
+
+  .p-part {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 40px 250px;
+    color: #2b2b2b;
+    opacity: 0.87;
+  }
+
+  .p-box {
+    margin: 20px auto;
+    width: 900px;
+    height: 142px;
+    background: #ffffff;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+  }
+
+  .system-btn {
+    width: 249px;
+    height: 49px;
+    background: #00c5de;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    margin: 30px 0;
+    color: white;
+    transition: all 1s ease;
+  }
+
+  .system-btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .system-btn:active {
+    transition: all 0.4s ease;
+    background-color: black;
+  }
+}
+
+@media (max-width: 1200px) {
+  .system {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+
+    .system-title {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      font-size: 30px;
+    }
+
+    .system-box {
+      width: 100%;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .p-box {
+      display: none;
+    }
+
+    .p-part {
+      width: 90%;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    input {
+      width: 70%;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
